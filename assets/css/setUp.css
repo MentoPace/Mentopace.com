@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-attachment: fixed;
+}
+
+
+html {
+    font-size: 61.5%;
+}
+
+/* nav bar section */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    /* background-image: url(./images/background.jpeg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div#navbar {
+    width: 100%;
+    display: flex;
+    padding: 5px 50px;
+    align-items: center;
+}
+
+div#navbar img#logo {
+    height: auto;
+    width: 150px;
+}
+
+div#sidebar {
+    width: 60%;
+    margin-left: auto;
+    display: flex;
+}
+
+/* box handle */
+#checkbox,
+#checkbtn {
+    display: none;
+}
+
+div#navbar ul#list {
+    display: flex;
+    margin-right: auto;
+    justify-content: space-around;
+    height: auto;
+}
+
+div#navbar ul#list a li.items {
+    font-size: 2em;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin: 10px;
+    color: #fff;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+div#navbar ul#list a li.items:hover {
+    background-color: #fff;
+    color: #0F2862;
+
+}
+
+div#navbar ul#list a li.active {
+    background-color: #fff;
+    color: #0F2862;
+}
+
+button#navbtn {
+    padding: 8px 20px;
+    margin-top: 14px;
+    text-transform: capitalize;
+    background-color: transparent;
+    color: #EA9B03;
+    font-weight: 900;
+    font-size: 1.6em;
+    text-align: center;
+    width: 100%;
+    border: 2px solid #EA9B03;
+    border-radius: 3px;
+}
+
+button#navbtn:hover {
+    background-color: #B23850;
+    border: 2px solid #B23850;
+    color: #0F2862;
+}
+
+/* nav bar section ends */
+
+/* main section  */
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image: url(./images/background.jpeg); */
+    background: rgb(255, 0, 50);
+        background: linear-gradient(125deg, rgba(255, 0, 50, 1) 0%, rgba(0, 77, 255, 1) 100%);
+}
+
+/* form section */
+
+div#form {
+    width: 50%;
+    height: auto;
+    padding: 20px 0px;
+    margin: auto;
+    /* background-color: #fff; */
+    box-shadow: 0px 0px 8px rgb(0 0 0);
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+
+}
+
+p {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+    color: #fff;
+    margin: 1% auto 2%;
+}
+
+div#main {
+    width: 70%;
+    height: inherit;
+    margin: auto 14%;
+    padding: 20px 40px;
+    background-color: transparent;
+    
+}
+
+input {
+    padding: 8px;
+    border: none;
+    outline: none;
+    background-color: #f1f1f1;
+    color: #000;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: auto auto 3%;
+    color: #0F2862;
+    width: 100%;
+}
+
+select {
+    padding: 8px;
+    border: none;
+    outline: none;
+    background-color: #f1f1f1;
+    color: #000;
+    font-size: 17px;
+    font-weight: 500;
+    margin: auto auto 3%;
+    width: 100%;
+    color: #0F2862;
+}
+
+label {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+button#submit {
+    width: 50%;
+    padding: 10px 20px;
+    margin: 1% 22% 0px;
+    border: none;
+    font-size: 18px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: capitalize;
+    outline: none;
+    border-radius: 20px;
+    background-color: #B23850;
+}
+
+@media screen and (max-width: 900px) {
+
+    main {
+        height: 112vh;
+    }
+
+    div#form {
+        width: 60%;
+    }
+
+    div#navbar {
+        padding: 15px;
+    }
+
+    div#sidebar {
+        display: none;
+        background-color: #fff;
+        width: 100%;
+        padding: 30px 15px;
+        position: fixed;
+        top: 64px;
+        left: 0px;
+    }
+
+
+    #checkbox {
+        display: none;
+    }
+
+    #checkbtn {
+        display: block;
+        font-size: 2.6em;
+        color: #fff;
+        margin-left: auto;
+        cursor: pointer;
+    }
+
+    #checkbox:checked~div#sidebar {
+        display: block;
+    }
+
+
+    div#navbar ul#list {
+        display: block;
+        background-color: transparent;
+        text-align: center;
+
+        margin-left: auto;
+    }
+
+    div#navbar ul#list a li.items {
+        color: #B23850;
+    }
+
+    div#navbar ul#list a li.items:hover {
+        background-color: transparent;
+        color: #0F2862;
+    }
+
+    div#navbar ul#list a li.active {
+        background-color: transparent;
+        color: #0F2862;
+    }
+
+    button#navbtn {
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width: 580px) {
+    div#form {
+        width: 80%;
+    }
+}

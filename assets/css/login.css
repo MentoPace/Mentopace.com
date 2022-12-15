@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-attachment: fixed;
+}
+
+html {
+    font-size :61.5%;
+}
+
+
+/* nav bar section */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    /* background-image: url(./images/background.jpeg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div#navbar {
+    width: 100%;
+    display: flex;
+    padding: 5px 50px;
+    align-items: center;
+}
+
+div#navbar img#logo {
+    height: auto;
+    width: 150px;
+}
+
+div#sidebar {
+    width: 60%;
+    margin-left: auto;
+    display: flex;
+}
+
+/* box handle */
+#checkbox,
+#checkbtn {
+    display: none;
+}
+
+div#navbar ul#list {
+    display: flex;
+    margin-right: auto;
+    justify-content: space-around;
+    height: auto;
+}
+
+div#navbar ul#list a li.items {
+    font-size: 2em;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin: 10px;
+    color: #fff;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+div#navbar ul#list a li.items:hover {
+    background-color: #fff;
+    color: #0F2862;
+
+}
+
+div#navbar ul#list a li.active {
+    background-color: #fff;
+    color: #0F2862;
+}
+
+button#navbtn {
+    padding: 8px 20px;
+    margin-top: 14px;
+    text-transform: capitalize;
+    background-color: transparent;
+    color: #EA9B03;
+    font-weight: 900;
+    font-size: 1.6em;
+    text-align: center;
+    width: 100%;
+    border: 2px solid #EA9B03;
+    border-radius: 3px;
+}
+
+button#navbtn:hover {
+    background-color: #B23850;
+    border: 2px solid #B23850;
+    color: #0F2862;
+}
+
+/* nav bar section ends */
+
+/* hero section 1st layer */
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image: url(../images/background.jpeg); */
+    background: rgb(255, 0, 50);
+        background: linear-gradient(125deg, rgba(255, 0, 50, 1) 0%, rgba(0, 77, 255, 1) 100%);
+}
+
+div#form {
+    width: 450px;
+    height: auto;
+    padding: 20px 40px 40px;
+    border-radius: 10px;
+    /* background-color: #; */
+    /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 2% auto;
+}
+
+@media screen and (max-width: 570px) {
+    div#form {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    div#form {
+        width: 100%;
+        /* From https://css.glass */
+            background: none;
+            border-radius: none;
+            box-shadow:  none;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+            border: none;
+        
+    }
+}
+
+
+h1 {
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 4%;
+    color: #fff;
+}
+
+input {
+    width: 100%;
+    padding: 8px 20px;
+    font-size: 18px;
+    border: none;
+    color: #000;
+    outline: none;
+    margin: 5px 0px 22px 0px;
+    background-color: #f1f1f1;
+    text-align: left;
+}
+
+input#pass {
+    margin: 0px;
+}
+
+div#merge {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    position: relative;
+}
+
+button#show {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    padding: 0px 10px;
+    border: none;
+    color: #0f286279;
+    font-size: 15px;
+}
+
+button#show:hover {
+    text-decoration: 1px solid underline #b23850b0;
+}
+
+label {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+button.btn {
+    width: 100%;
+    padding: 12px 20px 10px;
+    border: none;
+    text-transform: capitalize;
+    font-weight: 400;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-top: 14px;
+}
+
+button.sign {
+    background-color: #0F2862;
+    color: #fff;
+    border: 2px solid #0F2862;
+}
+
+button.sign:hover {
+    background-color: #B23850;
+    color: #fff;
+    border: 2px solid #B23850;
+}
+
+button.continue {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+button.continue:hover {
+    background-color: #B23850;
+    border: 2px solid #B23850;
+}
+
+div#lines {
+    display: flex;
+    margin: 4% auto;
+    width: 100%;
+    font-size: 18px;
+    color: #0F2862;
+    text-transform: uppercase;
+}
+
+div.line {
+    width: 40%;
+    height: 1px;
+    margin: 2% auto;
+    background-color: #fff;
+}
+
+p#new {
+    text-align: center;
+    margin: 3% 0px 0px;
+    color: #0F2862;
+    font-size: 1.3em;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 900px) {
+
+    div#navbar {
+        padding: 15px;
+    }
+
+    div#sidebar {
+        display: none;
+        background-color: #fff;
+        width: 100%;
+        padding: 30px 15px;
+        position: fixed;
+        top: 64px;
+        left: 0px;
+    }
+
+
+    #checkbox {
+        display: none;
+    }
+
+    #checkbtn {
+        display: block;
+        font-size: 2.6em;
+        color: #fff;
+        margin-left: auto;
+        cursor: pointer;
+    }
+
+    #checkbox:checked~div#sidebar {
+        display: block;
+    }
+
+
+    div#navbar ul#list {
+        display: block;
+        background-color: transparent;
+        text-align: center;
+
+        margin-left: auto;
+    }
+
+    div#navbar ul#list a li.items {
+        color: #B23850;
+    }
+
+    div#navbar ul#list a li.items:hover {
+        background-color: transparent;
+        color: #0F2862;
+    }
+
+    div#navbar ul#list a li.active {
+        background-color: transparent;
+        color: #0F2862;
+    }
+
+    button#navbtn {
+        width: 100%;
+
+    }
+}

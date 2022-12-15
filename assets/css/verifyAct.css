@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-attachment: fixed;
+}
+
+html {
+    font-size: 61.5%;
+}
+
+/* nav bar section */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    /* background-image: url(./images/background.jpeg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div#navbar {
+    width: 100%;
+    display: flex;
+    padding: 5px 50px;
+    align-items: center;
+}
+
+div#navbar img#logo {
+    height: auto;
+    width: 150px;
+}
+
+div#sidebar {
+    width: 60%;
+    margin-left: auto;
+    display: flex;
+}
+
+/* box handle */
+#checkbox,
+#checkbtn {
+    display: none;
+}
+
+div#navbar ul#list {
+    display: flex;
+    margin-right: auto;
+    justify-content: space-around;
+    height: auto;
+}
+
+div#navbar ul#list a li.items {
+    font-size: 2em;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin: 10px;
+    color: #fff;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+div#navbar ul#list a li.items:hover {
+    background-color: #fff;
+    color: #0F2862;
+
+}
+
+div#navbar ul#list a li.active {
+    background-color: #fff;
+    color: #0F2862;
+}
+
+button#navbtn {
+    padding: 8px 20px;
+    margin-top: 14px;
+    text-transform: capitalize;
+    background-color: transparent;
+    color: #EA9B03;
+    font-weight: 900;
+    font-size: 1.6em;
+    text-align: center;
+    width: 100%;
+    border: 2px solid #EA9B03;
+    border-radius: 3px;
+}
+
+button#navbtn:hover {
+    background-color: #B23850;
+    border: 2px solid #B23850;
+    color: #0F2862;
+}
+
+/* nav bar section ends */
+/* main section  */
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image: url(./images/background.jpeg) */
+    background: rgb(255, 0, 50);
+        background: linear-gradient(125deg, rgba(255, 0, 50, 1) 0%, rgba(0, 77, 255, 1) 100%);
+}
+
+/* verify your code */
+
+div.main {
+    width: 40%;
+    margin: 10% auto;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow:  0px 0px 20px 2px #cccccc;
+}
+
+h1 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 900;
+    color: #0F2862;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+    color: #0F2862;
+    background-color: #f1f1f1;
+    outline: none;
+    margin: 2% auto;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #B23850;
+}
+
+button.btn {
+    width: 48%;
+    margin: 2% 1% 0px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    outline: none;
+    border-radius: 4px;
+    padding: 8px 20px;
+}
+
+button.resend {
+    color: #fff;
+    background-color: #B23850;
+}
+
+button.verify {
+    color: #fff;
+    background-color: #0F2862;
+}
+
+div.tab {
+    width: 100%;
+    display: table;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    div.main {
+        width: 68%;
+    }
+    div#navbar {
+        padding: 15px;
+    }
+
+    div#sidebar {
+        display: none;
+        background-color: #fff;
+        width: 100%;
+        padding: 30px 15px;
+        position: fixed;
+        top: 64px;
+        left: 0px;
+    }
+
+
+    #checkbox {
+        display: none;
+    }
+
+    #checkbtn {
+        display: block;
+        font-size: 2.6em;
+        color: #fff;
+        margin-left: auto;
+        cursor: pointer;
+    }
+
+    #checkbox:checked~div#sidebar {
+        display: block;
+    }
+
+
+    div#navbar ul#list {
+        display: block;
+        background-color: transparent;
+        text-align: center;
+
+        margin-left: auto;
+    }
+
+    div#navbar ul#list a li.items {
+        color: #B23850;
+    }
+
+    div#navbar ul#list a li.items:hover {
+        background-color: transparent;
+        color: #0F2862;
+    }
+
+    div#navbar ul#list a li.active {
+        background-color: transparent;
+        color: #0F2862;
+    }
+
+    button#navbtn {
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width: 580px) {
+    div.main {
+        width: 85%;
+    }
+}

@@ -1,0 +1,19 @@
+Header set Access-Control-Allow-Origin "*"
+Header set Access-Control-Allow-Methods "GET,POST,OPTIONS"
+Header set Access-Control-Allow-Headers "Content-Type"
+###Don't allow the server to cache results
+Header set Cache-Control "no-cache, must-revalidate"
+
+RewriteEngine on
+##RewriteCond %{HTTPS} !on
+##RewriteRule (.*) http://%{HTTP_HOST}%{REQUEST_URI}
+##RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
+##RewriteRule .* - [F]
+
+RewriteRule ^api/(.*)$ core/api/$1 [QSA,L]
+
+RewriteRule ^choose-path$ path.php [QSA,L]
+RewriteRule ^login$ login.php [QSA,L]
+RewriteRule ^register$ register.php [QSA,L]
+RewriteRule ^mentor/register$ register.php?type=mentor [QSA,L]
+RewriteRule ^mentee/register$ register.php?type=mentee [QSA,L]

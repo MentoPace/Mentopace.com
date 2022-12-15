@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:ital,wght@0,200;0,400;0,700;1,300;1,900&family=Poppins:ital,wght@0,500;0,700;0,900;1,900&family=Roboto+Mono:ital,wght@0,200;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="setUp.css">
+    <title>Set up Account</title>
+</head>
+<body>
+    <main>
+        <nav>
+        
+            <div id="navbar">
+                <a href="./index.html"> <img src="../images/logo.png" alt="logo.png" id="logo"></a>
+        
+                <label for="checkbox" id="checkbtn">
+                    <i class="fa-sharp fa-solid fa-bars"></i>
+                </label>
+                <input type="checkbox" name="checkbox" id="checkbox">
+        
+                <div id="sidebar">
+        
+                    <ul id="list">
+                        <a href="#">
+                            <li class="items active">home</li>
+                        </a>
+                        <a href="#">
+                            <li class="items ">about</li>
+                        </a>
+                        <a href="#">
+                            <li class="items ">blog</li>
+                        </a>
+                    </ul>
+        
+                </div>
+        
+            </div>
+        
+        </nav>
+
+        <div id="form">
+            <h1>now that you've joined lets get you set up</h1>
+            <p>lets know more about you</p>
+
+            <div id="main">
+                <label for="fname">first name</label>
+                <input type="text" name="fname" id="fname">
+
+                <label for="lname">last name</label>
+                <input type="text" name="lname" id="lname">
+
+                <label for="number">phone number</label>
+                <input type="number" name="number" id="number">
+
+                <label for="age">age</label>
+                <input type="date" name="age" id="age">
+
+                    <label for="niche">tech niche</label>
+                    <select name="niche" id="niche">
+                        <option>Product Manager</option>
+                        <option>Augumented Reality</option>
+                        <option>UI/UX Designer</option>
+                        <option>Front-End Web Develpment</option>
+                        <option>Back-end Web Development</option>
+                        <option>Graphics Designer</option>
+                        <option>Android Developent</option>
+                        <option selected>Full-Stack Developer</option>
+                        <option>Software Developer</option>
+                        <option>Machine Learning</option>
+                        <option>Artificial Intelligence</option>
+                    </select>
+
+                    <label for="level">level</label>
+                   <select name="level" id="level">
+                        <option>Beginner</option>
+                        <option selected>Intermediate</option>
+                        <option>Professional</option>
+                </select>
+
+                <a href=""><button id="submit">submit</button></a>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
