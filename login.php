@@ -21,6 +21,12 @@ if(isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])){
     <?php include('includes/head.php'); ?>
     <link rel="stylesheet" href="assets/css/auth.css">
     <title>Login</title>
+    <style>
+        main{
+            
+    background-color: rgb(221, 221, 221);
+        }
+    </style>
 </head>
 
 <body>

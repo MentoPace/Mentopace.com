@@ -34,7 +34,7 @@ if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
     }
 
     .navbar {
-        box-shadow: 2px 2px 89px #6c1921;
+        box-shadow: 2px 2px 89px #6a6a6a;
     }
 
     .navbar a {
